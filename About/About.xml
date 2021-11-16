@@ -14,5 +14,7 @@
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>CETeam.CombatExtended</li>
+		<li>carnysenpai.enableoversizedweapons</li>
+		<li>owlchemist.cherrypicker</li>
 	</loadAfter>
 </ModMetaData>

@@ -14,6 +14,6 @@
   </loadBefore>
   <loadAfter>
   </loadAfter>
-  <manifestUri>https://raw.githubusercontent.com/Official-Husko/Ratchet-Clank-Lombax-Tech/Stable/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/Official-Husko/Ratchet-Clank-Lombax-Tech/releases</downloadUri>
+  <manifestUri>https://github.com/Official-Husko/The-Lone-Wolf-Weapon-Package/blob/development/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/Official-Husko/The-Lone-Wolf-Weapon-Package/releases</downloadUri>
 </Manifest>
