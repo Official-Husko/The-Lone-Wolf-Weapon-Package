@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!--===== .45 ACP Bullet =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>TLWWP_Bullet_45_ACP</defName>
+    <label>.45 ACP Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>65</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--===== Commando Mark III | Author: Husko =====-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>TLWWP_Volunteer_Carbine</defName>
+    <label>Commando Mark III</label>
+    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Commando Mark III's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
+    <graphicData>
+      <texPath>Things/Weapon/Ranged/Rifle/TLWWP_Volunteer_Carbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.55</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLWWP_Bullet_45_ACP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>30</range>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </ThingDef>
+  
+    <!--===== Commando Mark II | Author: Husko =====-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>TLWWP_Spitfire_Carbine</defName>
+    <label>Commando Mark II</label>
+    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Commando Mark II's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
+    <graphicData>
+      <texPath>Things/Weapon/Ranged/SMG/TLWWP_Spitfire_Carbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.45</AccuracyShort>
+      <AccuracyMedium>0.25</AccuracyMedium>
+      <AccuracyLong>0.05</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLWWP_Bullet_45_ACP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>30</range>
+        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </ThingDef>
+
+</Defs>
