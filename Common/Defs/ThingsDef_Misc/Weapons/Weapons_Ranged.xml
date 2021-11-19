@@ -2,7 +2,7 @@
 
 <Defs>
 
-  <!--===== .45 ACP Bullet =====-->
+  <!--===== .45 ACP Bullet | Author: Husko =====-->
   <ThingDef ParentName="BaseBullet">
     <defName>TLWWP_Bullet_45_ACP</defName>
     <label>.45 ACP Bullet</label>
@@ -17,11 +17,11 @@
     </projectile>
   </ThingDef>
 
-  <!--===== Commando Mark III | Author: Husko =====-->
+  <!--===== Volunteer Carbine | Author: Husko =====-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TLWWP_Volunteer_Carbine</defName>
-    <label>Commando Mark III</label>
-    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Commando Mark III's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
+    <label>Volunteer Carbine</label>
+    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Volunteer Carbine's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
     <graphicData>
       <texPath>Things/Weapon/Ranged/Rifle/TLWWP_Volunteer_Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -93,11 +93,11 @@
     </weaponTags>
   </ThingDef>
   
-    <!--===== Commando Mark II | Author: Husko =====-->
+    <!--===== Spitfire Auto Carbine | Author: Husko =====-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TLWWP_Spitfire_Carbine</defName>
-    <label>Commando Mark II</label>
-    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Commando Mark II's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
+    <label>Spitfire Auto Carbine</label>
+    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Spitfire Auto Carbine's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
     <graphicData>
       <texPath>Things/Weapon/Ranged/SMG/TLWWP_Spitfire_Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -113,9 +113,9 @@
       <WorkToMake>11000</WorkToMake>
       <Mass>3.5</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.45</AccuracyShort>
-      <AccuracyMedium>0.25</AccuracyMedium>
-      <AccuracyLong>0.05</AccuracyLong>
+      <AccuracyShort>0.48</AccuracyShort>
+      <AccuracyMedium>0.28</AccuracyMedium>
+      <AccuracyLong>0.08</AccuracyLong>
       <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
     </statBases>
     <costList>
@@ -131,6 +131,234 @@
         <warmupTime>0.5</warmupTime>
         <range>30</range>
         <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Thompson M1921 | Author: Husko =====-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>TLWWP_M1921_</defName>
+    <label>Thompson M1921</label>
+    <description>The Thompson, popularly nicknamed the "Tommy Gun", is an American submachine gun that was designed by John Talliaferro Thompson and produced by the Auto-Ordnance Corporation. Originally conceived during World War I as a portable machine gun to break the stalemate of trench warfare, the Thompson entered production in 1921 and was primarily marketed for law enforcement purposes.</description>
+    <graphicData>
+      <texPath>Things/Weapon/Ranged/SMG/TLWWP_M1921</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLWWP_Bullet_45_ACP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>40</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </ThingDef>
+  
+  <!--===== Thompson M1A1 | Author: Husko =====-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>TLWWP_M1A1_</defName>
+    <label>Thompson M1A1</label>
+    <description>The US M1 "Thompson" or US M1A1 "Thompson" was developed in early 1942 as a simplified and improved version of the US M1928A1 "Thompson" and declared as an official military ordinance in April 1942.</description>
+    <graphicData>
+      <texPath>Things/Weapon/Ranged/SMG/TLWWP_M1A1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLWWP_Bullet_45_ACP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>43</range>
+        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>TLWWP_Thompson_M1A1_Shot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>SimpleGun</li>
+    </weaponTags>
+  </ThingDef>
+
+  <!--===== Eagle Carbine | Author: Husko =====-->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>TLWWP_Eagle_Carbine</defName>
+    <label>Eagle Carbine</label>
+    <description>These were produced between 1964 to 1968, when the Eagle Gun Company went bankrupt. All the designs, tooling, fixturing and assets were later sold to Phoenix Arms in the production of the "Spit Fire" carbine.</description>
+    <graphicData>
+      <texPath>Things/Weapon/Ranged/Rifle/TLWWP_Eagle_Carbine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <recipeMaker>
+      <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <statBases>
+      <WorkToMake>11000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.80</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>30</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <WoodLog>40</WoodLog>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TLWWP_Bullet_45_ACP</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>43</range>
+        <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
