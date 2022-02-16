@@ -17,6 +17,57 @@
     </projectile>
   </ThingDef>
 
+  <!--===== 9mm Luger Bullet | Author: SillyBilly =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>TLWWP_9mm_Luger_Bullet</defName>
+    <label>9mm Luger Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>45</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--===== .44 Magnum Bullet | Author: SillyBilly =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>TLWWP_44_Magnum_Bullet</defName>
+    <label>.44 Magnum Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>13</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.17</armorPenetrationBase>
+      <speed>50</speed>
+    </projectile>
+  </ThingDef>
+
+  <!--===== 12ga Bullet | Author: SillyBilly =====-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>TLWWP_12ga_Bullet</defName>
+    <label>12ga Bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>4</stoppingPower>
+      <armorPenetrationBase>0.14</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
   <!--===== Volunteer Carbine | Author: Husko =====-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TLWWP_Volunteer_Carbine</defName>
@@ -26,7 +77,7 @@
       <texPath>Things/Weapon/Ranged/Rifle/TLWWP_Volunteer_Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_SMG</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -34,8 +85,8 @@
       </skillRequirements>
     </recipeMaker>
     <statBases>
-      <WorkToMake>11000</WorkToMake>
-      <Mass>3.5</Mass>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>1.5</Mass>
       <AccuracyTouch>0.80</AccuracyTouch>
       <AccuracyShort>0.55</AccuracyShort>
       <AccuracyMedium>0.35</AccuracyMedium>
@@ -45,7 +96,7 @@
     <costList>
       <Steel>30</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
-      <WoodLog>40</WoodLog>
+      <WoodLog>15</WoodLog>
     </costList>
     <verbs>
       <li>
@@ -58,12 +109,12 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <MuzzleFlashScale>9</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>stock</label>
+        <label>Stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -71,7 +122,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>grip</label>
+        <label>Grip</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -79,7 +130,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>barrel</label>
+        <label>Barrel</label>
         <capacities>
           <li>Blunt</li>
           <li>Poke</li>
@@ -93,16 +144,16 @@
     </weaponTags>
   </ThingDef>
 
-  <!--===== Spitfire Auto Carbine | Author: Husko =====-->
+  <!--===== Spitfire Carbine | Author: Husko =====-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TLWWP_Spitfire_Carbine</defName>
-    <label>Spitfire Auto Carbine</label>
-    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Spitfire Auto Carbine's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
+    <label>Spitfire Carbine</label>
+    <description>A simple blow-back action in a stamped and welded upper receiver on a cast lower receiver, these Spitfire Carbine's were meant to be a lot of fun to shoot at the range or farm, and use 30-round M3 Grease Gun magazines instead of the more expensive Thompson mags.</description>
     <graphicData>
       <texPath>Things/Weapon/Ranged/SMG/TLWWP_Spitfire_Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_SMG</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -130,16 +181,16 @@
         <defaultProjectile>TLWWP_Bullet_45_ACP</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>30</range>
-        <burstShotCount>5</burstShotCount>
+        <burstShotCount>1</burstShotCount>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <MuzzleFlashScale>9</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>stock</label>
+        <label>Stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -147,7 +198,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>grip</label>
+        <label>Grip</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -155,7 +206,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>barrel</label>
+        <label>Barrel</label>
         <capacities>
           <li>Blunt</li>
           <li>Poke</li>
@@ -178,7 +229,7 @@
       <texPath>Things/Weapon/Ranged/SMG/TLWWP_M1921</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_SMG</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -210,12 +261,12 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <MuzzleFlashScale>9</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>stock</label>
+        <label>Stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -223,7 +274,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>grip</label>
+        <label>Grip</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -231,7 +282,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>barrel</label>
+        <label>Barrel</label>
         <capacities>
           <li>Blunt</li>
           <li>Poke</li>
@@ -254,7 +305,7 @@
       <texPath>Things/Weapon/Ranged/SMG/TLWWP_M1A1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_SMG</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -286,12 +337,12 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>TLWWP_Thompson_M1A1_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <MuzzleFlashScale>9</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>stock</label>
+        <label>Stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -299,7 +350,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>grip</label>
+        <label>Grip</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -307,7 +358,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>barrel</label>
+        <label>Barrel</label>
         <capacities>
           <li>Blunt</li>
           <li>Poke</li>
@@ -330,7 +381,7 @@
       <texPath>Things/Weapon/Ranged/Rifle/TLWWP_Eagle_Carbine</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>Interact_SMG</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <researchPrerequisite>BlowbackOperation</researchPrerequisite>
       <skillRequirements>
@@ -362,12 +413,12 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>TLWWP_Thompson_Carbine_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <MuzzleFlashScale>9</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
       <li>
-        <label>stock</label>
+        <label>Stock</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -375,7 +426,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>grip</label>
+        <label>Grip</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -383,7 +434,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
       <li>
-        <label>barrel</label>
+        <label>Barrel</label>
         <capacities>
           <li>Blunt</li>
           <li>Poke</li>
@@ -395,23 +446,6 @@
     <weaponTags>
       <li>SimpleGun</li>
     </weaponTags>
-  </ThingDef>
-
-  <!--===== 9mm Luger Bullet =====-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>TLWWP_9mm_Luger_Bullet</defName>
-    <label>9mm Luger Bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>8</damageAmountBase>
-      <stoppingPower>4</stoppingPower>
-      <armorPenetrationBase>0.14</armorPenetrationBase>
-      <speed>45</speed>
-    </projectile>
   </ThingDef>
 
   <!--===== Glock 17 | Author: SillyBilly =====-->
@@ -429,7 +463,7 @@
       <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Pistol</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -463,7 +497,7 @@
         <range>15</range>
         <soundCast>TLWWP_Glock_17_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>5</muzzleFlashScale>
+        <MuzzleFlashScale>5</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -490,29 +524,11 @@
     </weaponTags>
   </ThingDef>
 
-  <!--===== .44 Magnum Bullet =====-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>TLWWP_44_Magnum_Bullet</defName>
-    <label>.44 Magnum Bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>13</damageAmountBase>
-      <stoppingPower>4</stoppingPower>
-      <armorPenetrationBase>0.17</armorPenetrationBase>
-      <speed>50</speed>
-    </projectile>
-  </ThingDef>
-
   <!--===== Desert Eagle | Author: SillyBilly =====-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TLWWP_Desert_Eagle</defName>
     <label>Desert Eagle</label>
-    <description>The Desert Eagle (colloquially, sometimes Deagle) is a gas-operated, semi-automatic pistol known for chambering the .50 Action Express, the largest centerfire cartridge of any magazine-fed, self-loading pistol.
-Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design was further refined by (and was also manufactured by) Israel Military Industries (IMI), until 1995, when MRI shifted the manufacturing contract to Saco Defense, in Saco, Maine. In 1998, MRI moved manufacturing back to IMI, which later commercialized its small arms branch under the name Israel Weapon Industries. Since December 2009, the Desert Eagle Pistol has been produced in the United States at MRI's Pillager, Minnesota, facility. Kahr Arms acquired Magnum Research in 2010.</description>
+    <description>The Desert Eagle (colloquially, sometimes Deagle) is a gas-operated, semi-automatic pistol known for chambering the .50 Action Express, the largest centerfire cartridge of any magazine-fed, self-loading pistol. Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design was further refined by (and was also manufactured by) Israel Military Industries (IMI), until 1995, when MRI shifted the manufacturing contract to Saco Defense, in Saco, Maine. In 1998, MRI moved manufacturing back to IMI, which later commercialized its small arms branch under the name Israel Weapon Industries. Since December 2009, the Desert Eagle Pistol has been produced in the United States at MRI's Pillager, Minnesota, facility. Kahr Arms acquired Magnum Research in 2010.</description>
     <graphicData>
       <texPath>Things/Weapon/Ranged/Pistol/TLWWP_Desert_Eagle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -523,7 +539,7 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
       <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>50</equippedAngleOffset>
-    <soundInteract>Interact_Pistol</soundInteract>
+    <soundInteract>Interact_Autopistol</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -556,7 +572,7 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
         <range>15</range>
         <soundCast>TLWWP_Desert_Eagle_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>5</muzzleFlashScale>
+        <MuzzleFlashScale>5</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -649,7 +665,7 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
         <range>65</range>
         <soundCast>TLWWP_AK_47_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>5</muzzleFlashScale>
+        <MuzzleFlashScale>5</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -684,28 +700,11 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
     </weaponTags>
   </ThingDef>
 
-  <!--===== 12ga Bullet =====-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>TLWWP_12ga_Bullet</defName>
-    <label>12ga Bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>22</damageAmountBase>
-      <stoppingPower>4</stoppingPower>
-      <armorPenetrationBase>0.14</armorPenetrationBase>
-      <speed>55</speed>
-    </projectile>
-  </ThingDef>
-
   <!--===== S4 Shotgun | Author: SillyBilly =====-->
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>TLWWP_S4_Shotgun</defName>
     <label>S4 Shotgun</label>
-    <description>The S4 is a standard pump-action shotgun with a tube magazine that holds 4 rounds if stock, 10 rounds if fully upgraded. There's really nothing special about it. The only futuristic feature is the ammunition counter on the side.</description>
+    <description>The S4 is a standard pump-action shotgun with a tube magazine that holds 4 rounds if Stock, 10 rounds if fully upgraded. There's really nothing special about it. The only futuristic feature is the ammunition counter on the side.</description>
     <graphicData>
       <texPath>Things/Weapon/Ranged/Shotgun/TLWWP_S4_Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -716,7 +715,7 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
       <drawOffsetWest>(-0.01, 0.0, 0.0)</drawOffsetWest>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>Interact_Shotgun</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>TableMachining</li>
@@ -749,7 +748,7 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
         <range>20</range>
         <soundCast>TLWWP_S4_Shotgun_Shot</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>9</muzzleFlashScale>
+        <MuzzleFlashScale>9</MuzzleFlashScale>
       </li>
     </verbs>
     <tools>
@@ -774,80 +773,6 @@ Magnum Research Inc. (MRI) designed and developed the Desert Eagle, the design w
     <weaponTags>
       <li>IndustrialGunAdvanced</li>
     </weaponTags>
-  </ThingDef>
-
-  <!-- RGD 5 | Author: SillyBilly -->
-  <ThingDef ParentName="BaseMakeableGrenade">
-    <defName>TLWWP_RGD_5_</defName>
-    <label>RGD 5</label>
-    <description>The RGD-5 (Ruchnaya Granata Distantsionnaya, English "Hand Grenade Remote"), is a post–World War II Soviet anti-personnel fragmentation grenade, designed in the early 1950s. The RGD-5 was accepted to service in 1954. It is still in service with many of Russia's former client states and has been supplied to Iraq as well as other Arab nations.</description>
-    <tickerType>Normal</tickerType>
-    <graphicData>
-      <texPath>Things/Weapon/Throwable/TLWWP_RGD_5</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <uiIconScale>1.3</uiIconScale>
-    <soundInteract>Interact_Grenade</soundInteract>
-    <techLevel>Industrial</techLevel>
-    <statBases>
-      <Mass>1</Mass>
-      <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
-      <WorkToMake>12000</WorkToMake>
-    </statBases>
-    <costList>
-      <Steel>20</Steel>
-      <Chemfuel>80</Chemfuel>
-    </costList>
-    <weaponTags>
-      <li>GrenadeDestructive</li>
-    </weaponTags>
-    <thingCategories>
-      <li>Grenades</li>
-    </thingCategories>
-    <verbs>
-      <li>
-        <label>throw RGD 5 grenade</label>
-        <verbClass>Verb_LaunchProjectile</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <range>12.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <warmupTime>1.5</warmupTime>
-        <noiseRadius>4</noiseRadius>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-        <soundCast>ThrowGrenade</soundCast>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-        </targetParams>
-        <defaultProjectile>TLWWP_Proj_RGD_5_</defaultProjectile>
-        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-      </li>
-    </verbs>
-    <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>2.66</explosiveRadius>
-        <explosiveDamageType>Bomb</explosiveDamageType>
-        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-      </li>
-    </comps>
-  </ThingDef>
-
-  <ThingDef Name="BaseFragGrenadeProjectile" ParentName="BaseGrenadeProjectile" Abstract="True">
-    <thingClass>Projectile_Explosive</thingClass>
-    <graphicData>
-      <texPath>Things/Projectile/TLWWP_RGD_5_Projectile</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <explosionRadius>1.9</explosionRadius>
-      <damageDef>Bomb</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionDelay>100</explosionDelay>
-    </projectile>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseFragGrenadeProjectile">
-    <defName>TLWWP_Proj_RGD_5_</defName>
-    <label>RGD 5 grenade</label>
   </ThingDef>
 
 </Defs>
